@@ -2,7 +2,7 @@ require('dotenv').config();
 
 var express = require('express');
 var passport = require('passport');
-var Strategy = require('passport-google-oauth20').Strategy;
+var Strategy = require('passport-naver').Strategy;
 
 
 // Configure the Facebook strategy for use by Passport.
@@ -13,8 +13,8 @@ var Strategy = require('passport-google-oauth20').Strategy;
 // with a user object, which will be set at `req.user` in route handlers after
 // authentication.
 passport.use(new Strategy({
-    clientID: process.env['GOOGLE_CLIENT_ID'],
-    clientSecret: process.env['GOOGLE_CLIENT_SECRET'],
+    clientID: process.env['NAVER_CLIENT_ID'],
+    clientSecret: process.env['NAVER_CLIENT_SECRET'],
     callbackURL: '/return',
     scope: 'profile'
   },
@@ -78,11 +78,11 @@ app.get('/login',
     res.render('login');
   });
 
-app.get('/login/google',
-  passport.authenticate('google'));
+app.get('/login/naver',
+  passport.authenticate('naver'));
 
 app.get('/return',
-  passport.authenticate('google', { failureRedirect: '/login' }),
+  passport.authenticate('naver', { failureRedirect: '/login' }),
   function(req, res) {
     res.redirect('/');
   });

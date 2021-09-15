@@ -1,7 +1,7 @@
 {
-  "name": "express-4.x-google-example",
+  "name": "express-4.x-naver-example",
   "version": "0.0.0",
-  "description": "Express 4.x app using Passport for authentication with Google.",
+  "description": "Express 4.x app using Passport for authentication with Naver.",
   "keywords": [
     "example",
     "express",
@@ -9,13 +9,13 @@
   ],
   "author": "Kenu Heo",
   "license": "Unlicense",
-  "homepage": "https://github.com/kenu/express-4.x-google-example",
+  "homepage": "https://github.com/kenu/express-4.x-naver-example",
   "repository": {
     "type": "git",
-    "url": "git://github.com/kenu/express-4.x-google-example.git"
+    "url": "git://github.com/kenu/express-4.x-naver-example.git"
   },
   "bugs": {
-    "url": "https://github.com/kenu/express-4.x-google-example/issues"
+    "url": "https://github.com/kenu/express-4.x-naver-example/issues"
   },
   "dependencies": {
     "body-parser": "^1.13.2",
@@ -27,6 +27,6 @@
     "express-session": "^1.11.3",
     "morgan": "^1.6.1",
     "passport": "^0.4.0",
-    "passport-google-oauth20": "^2.0.0"
+    "passport-naver": "^1.0.6"
   }
 }
