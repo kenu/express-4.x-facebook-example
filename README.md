@@ -19,8 +19,14 @@ The example uses environment variables to configure the consumer key and
 consumer secret needed to access [Naver's API](https://developers.naver.com/apps/#/list).
 Start the server with those variables set to the appropriate credentials.
 
-```bash
-$ NAVER_CLIENT_ID=__NAVER_CLIENT_ID__ NAVER_CLIENT_SECRET=__NAVER_CLIENT_SECRET__ node server.js
+* `.env.local`
+```
+NAVER_CLIENT_ID=__NAVER_CLIENT_ID__
+NAVER_CLIENT_SECRET=__NAVER_CLIENT_SECRET__
+```
+
+```
+node server.js
 ```
 
 Open a web browser and navigate to [http://localhost:3000/](http://localhost:3000/)
